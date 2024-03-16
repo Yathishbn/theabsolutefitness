@@ -99,6 +99,10 @@
             display: none;
         }
 
+        label.back{
+            display: none;
+        }
+
 
         .logo img{
             height: 100px;
@@ -811,14 +815,15 @@ p.hello{
                 top: 0;
                 left: -150%;
                 right: 0;
+                z-index: 10;
                 display: grid;
                 background-color: #292929;
-                z-index:10;
                 height: 100vh;
                 transition: all 0.5s ease-in-out;
                 position: absolute;
             }
 
+            
         
 
             header .nav nav ul {
@@ -837,9 +842,11 @@ p.hello{
 
             header .nav nav ul li details article{
                 position: relative;
-    border-radius: 0;
-    width: 100%;
+                border-radius: 0;
+                width: 100%;
             }
+
+            
 
             header .nav nav ul li a:active, header .nav nav ul li details summary:hover{
             background-color: transparent;
@@ -861,6 +868,22 @@ p.hello{
                 left: 0; 
             }
 
+            label.back{
+                display: block;
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+                background-color: red;
+                text-transform: capitalize;
+                font-weight: bold;
+                color: #252525;
+            } 
+
+            header .nav nav ul li details article p  {
+                width: fit-content;
+                text-align: center;
+                margin: auto;
+            }
 
 
             header label{
@@ -949,6 +972,7 @@ p.hello{
 
         <div class="nav">
             <nav>
+                <label for="check" class="back">close navigation</label>
                 <ul>
                     <li><a href="index.html" class="active">home</a></li>
                     <li><a href="about.html">about</a></li>
@@ -1111,7 +1135,7 @@ p.hello{
                 <h2>GYM timings</h2>
                 <p><strong>Monday to Saturday</strong></p>
                 <ul>
-                    <li>Morning 5:30AM - 10:00AM</li>
+                    <li>Morning 5:30AM - 11:30AM</li>
                     <li>Evening 4:00PM - 9:30PM</li>
                 </ul>
                 <p class="note"><strong>[Sundays are off]</strong></p>
@@ -1122,7 +1146,7 @@ p.hello{
 
 
     <div class="footer">
-        <h3>The Absolute Fitnes</h3>
+        <h3>The Absolute Fitness</h3>
         <p class="outro">Welcome to The Absolute Fitness, located in Rajajinagar's 5th block. We offer personalized Cardio Sessions, Body Sculpting, Strength Workouts, CrossFit Classes, and Personal Coaching. Transform your fitness journey with our Nutrition Plans tailored just for you</p>
         <div class="touch">
         <article><p class="hello">Know on</p>
