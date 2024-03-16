@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html>
+
+    <head>                                                                            <!--head-->
+
+        <meta charset="UTF-8">                                                        <!--meta-->
+        <meta name="viewport" content="width=device-width , initial-scale=1.0 , maximum-scale=1.0 , user-scalable=no">
+        <meta name="keywords" content="">
+        <meta name="description" content=" ">
+        <title>The Absolute Fitness - Rajajinagar, Bangalore </title>                                                             <!--title-->
+
+        <style type="text/css">                    
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Patua+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-size: 20px;
+            background-color: antiquewhite;
+            overflow-x: hidden;
+            color:#252525;
+            font-family:'montserrat', Arial, Helvetica, sans-serif;
+        }
+
+        .body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin:0;
+    
+    height:100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+.body::-webkit-scrollbar{
+    width:0;
+}
+
+        header{
+            display: flex;
+            background-color: #F9F6EE;
+            background-color: #252525;
+            align-items: center;
+            padding:0px 4%;
+            text-transform: capitalize;
+            justify-content:space-between;
+            z-index: 10;
+        }
+
+        
+        header .nav nav ul{
+            list-style: none;
+        }
+
+        header .nav nav ul li{
+            position: relative;
+            display: inline;
+            float: left;
+        }
+
+        header .nav nav ul li details article{
+            position: absolute;
+            z-index: 2;
+        }
+
+        header .nav nav ul li a , header .nav nav ul li details summary{
+            padding: 10px 30px;
+            width: fit-content;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            color:#e9e8e8;
+            display: block;
+        }
+
+        header .nav nav ul li a:hover,header .nav nav ul li a.active , header .nav nav ul li details summary:hover{
+            background-color: #3f3f3f;
+            color: #d0fd1b;
+        }
+
+        header .nav nav ul li details article{
+            background-color: #3f3f3f;;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        #check{
+            display:none;
+        }
+
+        header label{
+            display: none;
+        }
+
+
+        .logo img{
+            height: 100px;
+            margin-top:15px ;
+        }
+
+
+        .hero{
+            
+            height: fit-content;
+            background-color: #252525;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+            gap: 1.5em;
+            padding-bottom: 50px;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+        }
+
+        .first{
+            padding-left: 20px;
+        }
+
+        .first img#hero {
+            width: clamp(260px, 90%, 500px);
+            object-fit: cover;
+            opacity: 0;
+            animation: image 1s ease-in-out 0.2s 1 forwards;
+        }
+
+        @keyframes image {
+            0%{
+                opacity: 0.1;
+                transform: translateY(-50px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        .first .frame{
+            margin-top: -100px;
+            width: clamp(150px, 90%, 500px);
+            display: grid;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            border: #d0fd1b solid medium;
+            box-sizing: content-box;
+            padding: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(40px,1fr));
+        }
+
+        .first .frame img{
+            border-radius: 10px;
+            width: clamp(40px, 90%, 120px);
+            opacity: 0;
+            animation: images 1s ease-in-out 0.2s 1 forwards;
+        }
+
+        @keyframes images {
+            0%{
+                opacity: 0.1;
+                transform: translateY(30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+
+        .tag {
+            width: clamp(260px, 90%, 500px);
+            padding: 10px;
+            line-height: 1.5em;
+        }
+
+        .tag p{
+            font-weight: bold;
+            color: #d6d6d6;
+            animation: images 1.1s ease-in-out 0s 1 forwards;
+        }
+
+        .tag h1{
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            color: #e9e8e8;
+            animation: images 1.1s ease-in-out 0s 1 forwards;
+            margin-top: 20px;
+            line-height: 1.2em;
+        }
+
+        .tag h1 strong{
+            color: #d0fd1b;
+        }
+
+        p.cta {
+            font-weight: bolder;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        p.cta a{
+            width: 100%;
+            height: 100%;
+            border-radius: 45px;
+            text-transform: uppercase;
+            padding: 18px 30%;
+            transition: all .3s ease-in-out;
+            text-decoration: none;
+        }
+
+        p.action a{
+            background-color: #d0fd1b;
+            color: #252525;
+        }
+
+        p.action a:hover{
+            background-color: #eaff96;
+            color: #252525;
+        }
+
+        p.action{
+            animation: action 1s ease-in-out 0.1s 1 forwards;
+            opacity: 0;
+        }
+
+        @keyframes action {
+            0%{
+                opacity: 0;
+                transform:translateX(30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        p.explore{
+            opacity: 0;
+            animation: explore 1s ease-in-out 0.1s 1 forwards;
+        }
+
+        p.explore a{
+            background-color: #f3f3f3;
+            color: #252525;
+        }
+
+        p.explore a:hover{
+            background-color: #fdff88;
+            color: #252525;
+        }
+
+        @keyframes explore {
+            0%{
+                opacity: 0;
+                transform:translateX(-30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        
+
+        .benefits{
+            width: 100%;
+            height: fit-content;
+            background-image: url(background1.jpg);
+            background-position: center;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-size: cover;
+            scroll-behavior:auto;
+            padding-bottom: 20px;
+        }
+
+        .benefitsin{
+            display: grid;
+            margin: auto;
+            margin-top: .8em;
+            width: clamp(250px, 90%, 1100px);
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: .8em;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+        }
+
+        .contbenefit{
+            width: clamp(240px,90%,500px);
+            padding: 20px;
+            color: #252525;
+            background-color: #f7f7f7;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 20px;
+        }
+
+        .contbenefit h1{
+            color:#252525;
+            font-family: "roboto", 'Times New Roman', Times, sans-serif;
+        }
+
+        .contbenefit img{
+            width: 170px;
+            margin: auto;
+            transition: all .5s ease-in-out;
+        }
+
+        .headbenefit, .headservices{
+            width: fit-content;
+            margin: auto;
+            padding : 15px;
+        }
+
+        .headbenefit h1 , .headservices h1{
+            font-family: "Patua One",'Times New Roman', Times, sans-serif;
+            letter-spacing: .1em;
+            width: 100%;
+            height: 100%;
+            padding: 15px 35px;
+            border-radius: 50px;
+            color:#F08000;
+            text-transform: capitalize;
+        }
+
+        
+
+        .pas{
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-items: center;
+    color:#f3f3f3;
+    background-color: #252525;
+}
+
+.pasimg{
+    width: clamp(270px, 90%, 600px);
+    margin: auto;
+    padding-top: 40px;
+} 
+
+
+
+.pasimg img{
+    width: clamp(260px, 90%, 500px);
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+    animation: float 3s linear 0s infinite forwards; 
+}
+
+.contbenefit img:hover, .contbenefit img:active{
+    width: 200px;
+}
+
+
+
+.feed-cont{
+    width: 100%;
+    height: fit-content;
+    line-height: 1.5em;
+    padding-bottom: 30px;
+
+    padding-top: 20px;
+    background-color: #FFFAFA;
+}
+
+.feed-cont h3{
+    padding: 10px;
+    text-transform: capitalize;
+    line-height: 1.8em;
+    color:#343434;
+    margin: auto;
+    text-align: center;
+    width:fit-content;
+    margin-bottom: 20px;
+}
+
+.h3head{
+    color:#F08000;
+    width: fit-content;
+    margin: auto;
+}
+
+.feed-head em{
+    color:#494949;
+    font-weight: normal;
+    width: fit-content;
+    margin: auto;
+}
+
+.feed-head strong{
+    width: fit-content;
+    margin: auto;
+    color:#2b2b2b;
+}
+
+.feedback{
+    margin: auto;
+    max-width: 80%;
+    overflow-x: auto;
+    display: flex;
+    cursor: move;
+    height: fit-content;
+}
+
+.feedback::-webkit-scrollbar{
+    width:0;
+  }
+
+.feeds{
+    min-width:450px;
+    background-color: #b6b6b659;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.feeds img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+img.review{
+    width: fit-content;
+    padding: 5px 5px;
+    border-radius: 0px;
+    height:50px;
+}
+
+
+
+
+
+@keyframes float{
+    0%{
+        transform: translateY(0em);
+    }
+
+    50%{
+        transform: translateY(.8em);
+    }
+
+    100%{
+        transform: translateY(0em);
+    }
+}
+
+.pasin{
+    width: clamp(270px, 90%, 1100px);
+    border: #d0fd1b solid thick;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.pasin p.action{
+    margin: auto;
+    margin-top: 50px;
+}
+
+.pasin article.hov{
+    background-color: rgba(66, 66, 66, 0.3);
+    padding: 20px;
+    margin-top: 1em;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.pasin article.hov:hover, .benefitsjr article.hov:active{
+   transform: translateY(-.8em);
+}
+
+article h2{
+    text-transform: capitalize;
+    color: #d0fd1b;
+    line-height: 1.8em;
+    width: fit-content;
+    font-weight: 500;
+    font-family: 'roboto',Arial, Helvetica, sans-serif;
+}
+
+.one, .two{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    line-height: 1.4em;
+    justify-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.two article:nth-child(1){
+    order: 2;
+}
+
+.two article:nth-child(2){
+    order: 1;
+}
+
+
+.services{
+    width: 100%;
+    padding: 20px 0px;
+    height: auto;
+    align-items: center;
+}
+
+.servicesin{
+    display: grid;
+            margin: auto;
+            margin-top: .8em;
+            width: clamp(250px, 90%, 1100px);
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: .8em;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;    
+}
+
+.contservices{
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 20px;
+}
+
+.contservices img{
+    height: 200px;
+}
+
+.contservices a{
+    color: #252525;
+    text-decoration: none;
+}
+
+.contservices a h1{
+    color: #252525;
+    font-family: "Patua One",'Times New Roman', Times, sans-serif;
+    text-decoration: none;
+}
+
+.contservices a p.arrow{
+    line-height: 1.5em;
+    font-size: 60px;
+    margin: auto;
+    width: fit-content;
+    color: #ff7b00;
+    font-weight: bolder;
+}
+
+
+
+.about{
+    width: 100%;
+    padding-top: 20px;
+    background-color:#EEDC82;
+    margin-bottom: -30px;
+    color: #252525;
+}
+
+.about img{
+    margin-top: 10px;
+    width:clamp(260px,100%,500px);
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.about h1, .about h2{
+    color:#252525;
+    font-weight: 500;
+    padding: 15px;
+    font-family: "Patua One",'Times New Roman', Times, sans-serif;
+}
+
+.about h1{
+    width: fit-content;
+    margin: auto;
+}    
+
+.about article{
+    line-height: 1.5em;
+}
+
+.about-one{
+    width: clamp(270px, 90%, 1100px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    gap: 3em;
+    margin: auto;
+}
+
+.about-one a{
+    text-decoration: underline;
+    color: rgb(97, 147, 255);
+    text-transform: capitalize;
+}
+
+.about-two{
+    width: clamp(260px, 90%, 1100px);
+    margin: auto;
+    line-height: 1.5em;
+    padding:30px 10px;
+    gap: 4rem;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+          
+          "content sidebar";
+}
+
+.about-two article {
+    grid-area: content;
+  }
+
+  .about-two h2{
+    line-height: 1.2em;
+    border: none;
+  }
+
+  .about-two aside {
+    grid-area: sidebar;
+  }
+
+
+  .loc{
+    margin: auto;
+    width: 85%;
+}
+
+iframe{
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+.footer{
+    margin-top: 30px;
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    line-height: 1.6em;
+    font-size: 18px;
+    padding: 20px;
+    padding-top: 30px;
+  }
+
+  .footer p.outro{
+    width: clamp(260px, 85%, 600px);
+    margin: auto;
+
+  }
+
+  .footer h3{
+    color:#d0fd1b;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  a.smicon img{
+    width: 30px;
+    object-fit: contain;
+    height: 30px;
+    transition: all .2s ease-in-out;
+  }
+
+  a.smicon img:hover, a.smicon img:active{
+    transform:translateY(-.3em);
+  }
+
+  .footer .touch{
+    width:clamp(270px, 85%, 1000px);
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+    gap: 2em;
+  }
+
+  .touch{
+    padding-top: 20px;
+  }
+
+p.social{
+    word-spacing: 15px;
+}
+
+p.hello{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer input.form{
+    background-color: transparent;
+    border: rgb(223, 223, 223) medium solid;
+    line-height: 2em;
+    border-radius: 15px;
+    
+    outline: none;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    transition: all .2s ease-in-out;
+    width: 250px;
+}
+
+ .footer input.form:focus{
+    color: rgb(223, 223, 223);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 18px;
+    border: rgb(0, 45, 243) medium solid;
+    transform: translateY(-.4em);
+}
+
+.footer .sub{
+    font-size: 30px;
+    padding:10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+
+  }
+
+  .black-footer {
+    background-color: #252525;
+    color: white;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: 20px;
+  }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-content nav li {
+    margin-right: 20px;
+}
+
+.footer-content nav a {
+    color: white;
+}
+
+
+
+@media (max-width: 500px) {
+    .about-two {
+      grid-template-columns: 4fr;
+      grid-template-areas:
+        
+        "content"
+        "sidebar"
+        ;
+    }
+
+    body{
+                font-size: 18px;
+            }
+  }
+
+
+        @media (max-width:640px) {
+    .two article:nth-child(1){
+        order: 1;
+    }
+    
+    .two article:nth-child(2){
+        order: 2;
+    }
+}
+
+
+
+        @media (max-width:900px){
+
+            header .nav{
+                top: 0;
+                left: -150%;
+                right: 0;
+                display: grid;
+                background-color: #292929;
+                height: 100vh;
+                transition: all 0.5s ease-in-out;
+                position: absolute;
+            }
+
+        
+
+            header .nav nav ul {
+                position: relative;
+                padding-top: 100px;
+            }
+
+            header .nav nav ul li{
+                width: 100%;
+            }
+
+            header .nav nav ul li a,header .nav nav ul li details summary{
+                margin:auto;
+                width: fit-content;
+            }
+
+            header .nav nav ul li details article{
+                position: relative;
+    border-radius: 0;
+    width: 100%;
+            }
+
+            header .nav nav ul li a:active, header .nav nav ul li details summary:hover{
+            background-color: transparent;
+            color: #e7e7e7;
+        }
+
+        
+
+            header .nav {
+                width: 70%;
+            }
+
+
+            header label{
+                display: initial;
+            }
+
+            #check:checked ~ .nav {
+                left: 0; 
+            }
+
+
+
+            header label{
+            position: relative;
+            display: flex;
+            margin-right: 25px;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+         .middle{
+            height: 7px;
+            width: 40px;
+            background-color: #f2f2f2;
+            border-radius: 50px;
+            position: absolute;
+            transition: 0.3s ease;
+        }
+
+        .bottom{
+            top: 13px;
+            height: 7px;
+            width: 40px;
+            background-color: #f2f2f2;
+            border-radius: 50px;
+            position: absolute;
+            transition: 0.3s ease;
+        }
+
+         .top{
+            bottom: 7px;
+            height: 7px;
+            width: 40px;
+            background-color: #f2f2f2;
+            border-radius: 50px;
+            position: absolute;
+            transition: 0.3s ease;
+        }
+
+        #check:checked ~ label .top{
+            transform:rotate(-45deg);
+            transform-origin: right;
+            
+        }
+
+        #check:checked ~  label .bottom{
+            transform:rotate(45deg);
+            transform-origin: right;
+            
+        }
+
+        #check:checked ~  label .middle{
+            transform:translatex(20px);
+            opacity: 0;
+            
+        }
+
+
+    }
+
+            
+        
+        </style>                                                                        <!--style-->
+        
+    </head>
+
+    <body>                                                                             <!--body-->
+
+        <div class="body">
+
+        <header>
+
+            <div class="logo">
+               <a href="index.html"><img src="theabsolutefitnesslogo.png" alt="THE ABSOLUTE FITNESS"></a>
+            </div>
+
+            
+
+             <input type="checkbox" id="check">
+
+             <label for="check">
+                    <span class="top" id="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+            </label>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><details><summary>service</summary>
+                        <article> <p><a href="services.html#cardio">cardio</a></p>
+                            <p><a href="services.html#strength">strength training</a></p>
+                            <p><a href="services.html#nutrition">nutrition</a></p>
+                            <p><a href="services.html#personal">personal training</a></p>
+                            <p><a href="services.html#body">body building</a></p>
+                            <p><a href="services.html#cross">cross fit</a></p></article></details>
+                     </li>
+                    <li><a href="contact.html">contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+       </header>
+
+       <div class="hero">                                                         <!--hero-->
+
+        <div class="tag">
+            <h1>begin your fitness journey with <strong>the absolute fitness</strong></h1>
+            <p>Achieve Your Fitness Goals with Us! From Strength Training to Personalized Nutrition Counseling and Weight Management Programs, Let's Work Together Towards Your Healthier Lifestyle</p>
+             <p class="cta action"><a href="contact.html">join us</a></p>
+             <p class="cta explore"><a href="services.html">explore</a></p>
+        </div>
+
+        <div class="first">
+            <img src="workout.png" id="hero" alt="image of man lifting dumbbell"/>
+            <div class="frame">
+                <img src="1.jpg" alt=""/>
+                <img src="2.jpg" alt=""/>
+                <img src="3.jpg" alt=""/>
+            </div>
+        </div>
+       </div>
+
+       <div class="benefits">
+        <div class="headbenefit">
+            <h1>what you get by joining us</h1>
+        </div>
+        <div class="benefitsin">
+            <div class="onebenefit contbenefit"><h1>Improved Strength and Fitness</h1><img src="4.png" alt="strength and fitness image"><p>Let's build strength, endurance, and overall fitness together with our personalized programs and expert guidance.</p></div>
+            <div class="twobenefit contbenefit"><h1>Effective Weight Management</h1><img src="2.png" alt="weight management image"><p>Achieve your weight goals with our customized programs and nutrition counseling, boosting your confidence along the way.</p></div>
+        </div>
+        <div class="benefitsin">    
+            <div class="threebenefit contbenefit"><h1>Enhanced Wellness and Vitality</h1><img src="1.png" alt="Wellness and Vitality"><p>Feel energized, less stressed, and happier with our diverse fitness classes designed to improve your overall well-being.</p></div>
+            <div class="fourbenefit contbenefit"><h1>Supportive Community and motivation</h1><img src="3.png" alt="supportive community and motivation image"><p>Be part of our friendly community, get motivated by certified trainers, and reach your goals in a supportive environment.</p></div>
+        </div>
+
+        <p class="cta action"><a href="contact.html">join us</a> </p>
+
+       </div>
+
+       <div class="pas">
+        <div class="pasin">
+            <div class="one">
+           <article> <div class="pasimg"><img src="strength.png" alt=""/> </div></article>
+        
+            <article class="hov">
+            <h2>Looking to get fit?</h2><p>At The Absolute Fitness in Rajajinagar, we're not just any gym. With our personalized strength training and expert guidance, we'll help you reach your fitness goals. Whether you want to get stronger, boost endurance, or just improve overall fitness, our friendly community will keep you motivated. Come see why we're the best gym in Rajajinagar!</p></article>
+        </div>
+        <div class="two">
+       <article><div class="pasimg"><img src="fitness.png" alt=""/> </div></article>
+        
+            <article class="hov">
+            <h2>Ready to feel your best?</h2><p>At The Absolute Fitness, we're here to help. Our customized weight management programs and personalized nutrition advice make it easy to see results and feel confident. Plus, our fun fitness classes are for everyone, leaving you energized and happy after every workout. Join our friendly crew today and let's thrive together at the top gym in Rajajinagar!</p></article>
+        </div>
+        <p class="cta action"><a href="contact.html">join us</a> </p>
+    </div>
+    </div>
+
+    <div class="services">
+        <div class="headservices">
+            <h1>What we offer</h1>
+        </div>
+        <div class="servicesin">
+            <div class="contservices"><a href="services.html#cardio"><h1>Cardio Sessions</h1><img src="1_1.png" alt=""/><p>Amp up your stamina and vitality with our fun-filled cardio sessions.</p>
+                <p class="arrow">&raquo;</p></a></div>
+            <div class="contservices"><a href="services.html#strength"><h1>Strength Training</h1><img src="2_1.png" alt=""/><p>Unlock your strength potential and feel empowered with personalized workouts.</p>
+                <p class="arrow">&raquo;</p></a></div>
+            <div class="contservices"><a href="services.html#nutrition"><h1>Nutrition plans</h1><img src="3_1.png" alt=""/><p>Achieve your fitness goals effortlessly with custom nutrition plans.</p>
+                <p class="arrow">&raquo;</p></a></div>
+        </div>
+        <div class="servicesin">
+            <div class="contservices"><a href="services.html#personal"><h1>Personal Training</h1><img src="4_1.png" alt=""/><p>Reach your goals faster with the support of our expert trainers by your side.</p>
+                <p class="arrow">&raquo;</p></a></div>
+            <div class="contservices"><a href="services.html#body"><h1>Body Building</h1><img src="5.png" alt=""/><p>Sculpt your body and feel amazing with our tailored bodybuilding programs.</p>
+                <p class="arrow">&raquo;</p></a></div>
+            <div class="contservices"><a href="services.html#cross"><h1>CrossFit Classes </h1><img src="6.png" alt=""/><p>Get fit and have a blast in our high-energy CrossFit classes.</p>
+                <p class="arrow">&raquo;</p></a></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="feed-cont">
+        <div class="feed-head"> <h3><span class="h3head"> What they say about US</span> <br/> 
+            <div class="image"><img src="5star.png" class="review" alt="image of 5star review"/></div> 
+            <strong> Received 4.8 star ,out of 511 reviews</strong> <br/> <em> based on google reviews</em></h3></div>
+     <div class="feedback">
+     <div class="first feeds">
+
+       <!--<div class="image"><img src="yathi.jpg" alt="image of testinominals"/> </div>-->
+
+         <h4>Yogesh Sharma</h4>
+
+         <div class="image"><img src="5star.png" class="review" alt="image of 5 star review"/></div>
+
+         <p>Hi guys,I have worked out at  a lot of gyms in and around  Bangalore, I have found  peace here.  The equipments are excellent. Trainers are very knowledgeable about workouts, they stress on correct  posture which are result oriented. The gym is hygienic. I want to thank Mr. Arun Surya the propraiter  for giving me the opportunity and making me enjoy my workouts.</p>
+     </div>
+
+         <div class="second feeds">
+
+             <!--<div class="image"><img src="shashankprofile.jpg" alt="image of testinominals"/> </div>-->
+
+         <h4>Karthick KN</h4>
+
+         <div class="image"><img src="5star.png" class="review" alt="image of 5star review"/></div>
+
+         <p>The trainers are very good and well experienced,they have avid knowledge about workouts, they are very perticular about posture and correct form.They guarantee results. I am happy for the results that I have got after working. Out here. Thanks <strong>'THE ABSOLUTE FITNESS'</strong> for the fitness journey so far. Thank you.😊👍</p>
+
+         </div>
+
+         <div class="third feeds">
+
+            <!--<div class="image"><img src="shashankprofile.jpg" alt="image of testinominals"/> </div>-->
+
+        <h4>Sahana Mahesh</h4>
+
+        <div class="image"><img src="5star.png" class="review" alt="image of 5star review"/></div>
+
+        <p>Training is excellent in <strong>The Absolute Fitness</strong>,<br/>
+            It's one of the best gym for personal as well as general training.
+            Even in general training,trainers take their own effort to help everybody working out.
+            I love this gym</p>
+
+        </div>
+     </div>
+     </div>
+
+
+     <div class="about" id="about">
+        <h1>About - The Absolute Fitness, Rajajinagar</h1>
+        <div class="about-one">
+            <article><img src="about.png" alt=""/> </article>
+            <article><p> <strong> Established in 2002,</strong> The Absolute Fitness located in <em> #368, 65<sup>th</sup> cross, 5th Block Rajajinagar , Bangalore-560010</em>, offers high-quality fitness services at an affordable price. Our expert trainers, with over 30 years of collective experience, provide personalized guidance in cardio, nutrition, body building, strength training, CrossFit, and personal coaching. With modern facilities and a motivating atmosphere, join our community today to achieve your fitness goals efficiently and effectively.</p>
+            <a href="about.html">know more about us</a></article>
+        </div>
+        <div class="about-two">
+            
+            <article>
+                <div class="loc"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8294225269865!2d77.55136027412046!3d12.982759614635437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d3e59d7459b%3A0x6123f87e2f30cbc0!2sDMart%20Ready!5e0!3m2!1sen!2sin!4v1710546183414!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div> 
+            </article>
+            
+            <aside>
+                <h2>GYM timings</h2>
+                <p><strong>Monday to Saturday</strong></p>
+                <ul>
+                    <li>Morning 5:30AM - 10:00AM</li>
+                    <li>Evening 4:00PM - 9:30PM</li>
+                </ul>
+                <p class="note"><strong>[Sundays are off]</strong></p>
+            </aside>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <h3>The Absolute Fitnes</h3>
+        <p class="outro">Welcome to The Absolute Fitness, located in Rajajinagar's 5th block. We offer personalized Cardio Sessions, Body Sculpting, Strength Workouts, CrossFit Classes, and Personal Coaching. Transform your fitness journey with our Nutrition Plans tailored just for you</p>
+        <div class="touch">
+        <article><p class="hello">Know on</p>
+        <p class="social"><a href="https://www.instagram.com/theabsolutefitness.bangalore?igsh=MXNmbHQ4bDhmanFlNw==" class="smicon insta"><img src="instagramwhite.png" alt=""></a>
+           <a href="" class="smicon"><img src="facebookwhite.png" alt=""></a>
+        </p>
+        <p>contact on</p>
+        <p class="social"><a href="" target="_blank" class="smicon"><img src="whatsappwhite.png" alt=""></a>
+            <a href="tel:+919739738389" target="_blank" class="smicon"><img src="callwhite.png" alt=""></a>
+            <a href="mailto:theabsolutefitness0@gmail.com" target="_blank" class="smicon"><img src="emailwhite.png" alt=""></a></p></article>
+       <article><form action="https://formspree.io/f/xayrdwgj" method="post">
+           <label>
+            <p class="hello">Send Your Email </p><br/>
+            <p><input type="email" class="form">  <input type="submit" value="&rarr;" name="homepage" class="sub"/></p> 
+           </label>
+        </form></article>
+        </div>
+
+    </div>      
+    
+    
+    
+
+
+    <footer class="black-footer">
+        <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="services.html">service</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2024 The Absolute Fitness. All rights reserved.</p>
+    </footer>
+
+        </div>
+    </body>
+
+</html>

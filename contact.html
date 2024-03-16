@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+    <head>                                                                            <!--head-->
+
+        <meta charset="UTF-8">                                                        <!--meta-->
+        <meta name="viewport" content="width=device-width , initial-scale=1.0 , maximum-scale=1.0 , user-scalable=no">
+        <meta name="keywords" content="">
+        <meta name="description" content=" ">
+        <title>Contact The Absolute Fitness - Rajajinagar, Bangalore </title>                                                             <!--title-->
+
+        <style type="text/css">                    
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Patua+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            overflow-x: hidden;
+        }
+
+        body{
+            font-size: 20px;
+        background-color:#25252580;
+            color:#e9e8e8;
+            font-family:'montserrat', Arial, Helvetica, sans-serif;
+        }
+
+        .body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin:0;
+    height:100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+.body::-webkit-scrollbar{
+    width:0;
+}
+
+        header{
+            display: flex;
+            background-color: #F9F6EE;
+            background-color: #252525;
+            align-items: center;
+            padding:0px 4%;
+            text-transform: capitalize;
+            justify-content:space-between;
+            z-index: 10;
+        }
+
+        
+        header .nav nav ul{
+            list-style: none;
+        }
+
+        header .nav nav ul li{
+            position: relative;
+            display: inline;
+            float: left;
+        }
+
+        header .nav nav ul li details article{
+            position: absolute;
+        }
+
+        header .nav nav ul li a , header .nav nav ul li details summary{
+            padding: 10px 30px;
+            width: fit-content;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            color:#e9e8e8;
+            display: block;
+        }
+
+        header .nav nav ul li a:hover,header .nav nav ul li a.active , header .nav nav ul li details summary:hover{
+            background-color: #3f3f3f;
+            color: #d0fd1b;
+        }
+
+        header .nav nav ul li details article{
+            background-color: #3f3f3f;;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        #check{
+            display:none;
+        }
+
+        header label{
+            display: none;
+        }
+
+
+
+
+        .logo img{
+            height: 100px;
+            margin-top:15px ;
+        }
+
+        
+
+       
+       
+  
+        .contact{
+            background-image: url(contact\ background.png);
+            background-position: left;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            display: grid;
+            width: 100vw;
+            height: fit-contents;
+        }
+
+        .head h1,h1, h2, .location h1{
+            padding: 15px;
+            width:  fit-content;
+            font-family: "Patua One",'Times New Roman', Times, sans-serif;
+            text-transform: capitalize;
+           
+        }
+
+        .location p{
+            padding: 15px  ;
+        }
+
+        .head h1, .location h1, h1{
+            color:goldenrod;
+        }
+
+        form{
+            width: clamp(270px,90%,1000px);
+            margin-top: 20px;
+            padding: 15px;
+           
+        }
+
+        .input-group{
+            position:relative;
+        }
+
+        input{
+            width: clamp(250px,80%, 600px);
+            line-height: 1.6em;
+            padding: 10px 20px;
+            outline: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 17px;
+            background-color: antiquewhite;
+        }
+
+        .text{
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            color: rgb(97, 97, 97);
+            background-color: antiquewhite;
+            text-transform: uppercase;
+            transition: all .3s linear;
+
+        }
+
+        .text::after{
+            content: '*';
+            color: rgb(105, 0, 0);
+        }
+
+        input:focus + .text,
+        input:valid + .text{
+            color:black;
+            padding: 0px 5px;
+            border-left: thin solid black;
+            border-right: thin solid black;
+            top: -3px;
+        }
+
+        input:focus + .text::after,
+        input:valid + .text::after{
+            content: none;
+        }
+
+        input#name{
+            text-transform: uppercase;
+        }
+
+        input[type="submit"]{
+            text-transform: uppercase;
+            font-weight: bolder;
+            outline: none;
+            background-color:goldenrod;
+            color:#252525;  
+        }
+
+        .visible img{
+            width:50px;
+            padding: 5px;
+        }
+
+
+        .visible a{
+            color:#e7e7e7;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+
+ .two{
+    display: grid;
+    width: clamp(260px, 70vw, 700px);
+    margin: auto;
+    line-height: 1.4em;
+    gap: 2rem;
+}
+
+.loc{
+    margin: auto;
+    width:100%;
+}
+
+iframe{
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+
+
+        .footer{
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    line-height: 1.6em;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .footer p.outro{
+    width: clamp(260px, 85%, 600px);
+    margin: auto;
+
+  }
+
+  .footer h3{
+    color:#d0fd1b;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  a.smicon img{
+    width: 30px;
+    object-fit: contain;
+    height: 30px;
+    transition: all .2s ease-in-out;
+  }
+
+  a.smicon img:hover, a.smicon img:active{
+    transform:translateY(-.3em);
+  }
+
+  .footer .touch{
+    width:clamp(270px, 85%, 1000px);
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+    gap: 2em;
+  }
+
+  .touch{
+    padding-top: 20px;
+  }
+
+p.social{
+    word-spacing: 15px;
+}
+
+p.hello{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer input.form{
+    background-color: transparent;
+    border: rgb(223, 223, 223) medium solid;
+    line-height: 2em;
+    padding: 3px 6px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    transition: all .2s ease-in-out;
+    width: 250px;
+    padding: 2px 3px;
+}
+
+ .footer input.form:focus{
+    color: rgb(223, 223, 223);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 18px;
+    border: rgb(0, 45, 243) medium solid;
+    transform: translateY(-.4em);
+}
+
+.footer .sub{
+    font-size: 30px;
+    padding:10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+
+  }
+
+  .black-footer {
+    background-color: #252525;
+    color: white;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: 20px;
+  }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-content nav li {
+    margin-right: 20px;
+}
+
+.footer-content nav a {
+    color: white;
+}
+
+footer{
+    margin-bottom: -40px;
+}
+
+
+      
+
+
+        
+
+
+        @media (max-width:500px){
+            body{
+                font-size: 18px;
+            }
+        }
+
+
+
+        @media (max-width:900px){
+
+header .nav{
+    top: 0;
+    left: -150%;
+    z-index: 2;
+    right: 0;
+    display: grid;
+    background-color: #292929;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+}
+
+
+
+header .nav nav ul {
+    position: relative;
+    padding-top: 100px;
+}
+
+header .nav nav ul li{
+    width: 100%;
+}
+
+header .nav nav ul li a,header .nav nav ul li details summary{
+    margin:auto;
+    width: fit-content;
+}
+
+header .nav nav ul li details article{
+    position: relative;
+    border-radius: 0;
+    width: 100%;
+}
+
+header .nav nav ul li a:active, header .nav nav ul li details summary:hover{
+background-color: transparent;
+color: #e7e7e7;
+}
+
+
+
+header .nav {
+    width: 70%;
+}
+
+
+header label{
+    display: initial;
+}
+
+#check:checked ~ .nav {
+    left: 0; 
+}
+
+
+
+header label{
+position: relative;
+display: flex;
+margin-right: 25px;
+justify-content: center;
+cursor: pointer;
+}
+
+.middle{
+height: 7px;
+width: 40px;
+background-color: #f2f2f2;
+border-radius: 50px;
+position: absolute;
+transition: 0.3s ease;
+}
+
+.bottom{
+top: 13px;
+height: 7px;
+width: 40px;
+background-color: #f2f2f2;
+border-radius: 50px;
+position: absolute;
+transition: 0.3s ease;
+}
+
+.top{
+bottom: 7px;
+height: 7px;
+width: 40px;
+background-color: #f2f2f2;
+border-radius: 50px;
+position: absolute;
+transition: 0.3s ease;
+}
+
+#check:checked ~ label .top{
+transform:rotate(-45deg);
+transform-origin: right;
+
+}
+
+#check:checked ~  label .bottom{
+transform:rotate(45deg);
+transform-origin: right;
+
+}
+
+#check:checked ~  label .middle{
+transform:translatex(20px);
+opacity: 0;
+
+}
+
+
+}
+        </style>                                                                        <!--style-->
+        
+    </head>
+
+    <body>                                                                             <!--body-->
+
+        <div class="body">
+
+        <header>
+
+            <div class="logo">
+               <a href="index.html"><img src="theabsolutefitnesslogo.png" alt="the absolute fitness, rajajinagar logo"></a>
+            </div>
+
+            
+
+             <input type="checkbox" id="check">
+
+             <label for="check">
+                    <span class="top" id="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+            </label>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html" >about</a></li>
+                    <li><details><summary>service</summary>
+                        <article> <p><a href="services.html#cardio">cardio</a></p>
+                            <p><a href="services.html#strength">strength training</a></p>
+                            <p><a href="services.html#nutrition">nutrition</a></p>
+                            <p><a href="services.html#personal">personal training</a></p>
+                            <p><a href="services.html#body">body building</a></p>
+                            <p><a href="services.html#cross">cross fit</a></p></article></details>
+                     </li>
+                    <li><a href="contact.html" class="active">contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+       </header>
+
+       
+       
+       
+       <div class="contact">
+
+        
+    <div class="head">
+        <h1>contact us</h1>
+        <h2>SHAPE your life with just one click!</h2>
+    </div>
+
+    <div class="visible">
+        <p class="gmail"><a href="mailto:theabsolutefitness0@gmail.com"><img src="emailwhite.png" alt="" align="middle"> theabsolutefitness0@gmail.com</a></p>
+        <p class="phone"><a href="tel:+919739738389"><img src="callwhite.png" alt="" align="middle"> +919739738389</a></p>
+    </div>
+
+    <form action="https://formspree.io/f/xayrdwgj" method="post">
+        
+            <div class="input-group">
+                <input type="name" id="name" name="name" required>
+                <label class="text" for="name">name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <label class="text" for="name">email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="tel" id="tel" name="ph-number" required>
+                <label class="text" for="name">contact no</label>
+            </div>
+
+            <input type="submit" name="ownsubmit" value="submit"/>
+
+        
+    </form>
+
+    <div class="location">
+        <h1>reach us</h1><p>#368, 65th cross , 5th block, Rajajinagar, Bengaluru-560010</p>
+    </div>
+
+    <div class="two">
+       <div class="loc"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8294225269865!2d77.55136027412046!3d12.982759614635437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d3e59d7459b%3A0x6123f87e2f30cbc0!2sDMart%20Ready!5e0!3m2!1sen!2sin!4v1710546183414!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div> 
+         </div>  
+
+         <h1>know us</h1>
+
+         <div class="visible">
+            <p class="gmail"><a href="https://www.instagram.com/theabsolutefitness.bangalore?igsh=MXNmbHQ4bDhmanFlNw=="><img src="instagramwhite.png" alt="" align="middle"> theabsolutefitness.bangalore</a></p>
+            <p class="phone"><a href=""><img src="facebookwhite.png" alt="" align="middle">the absolute fitness</a></p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+             
+
+       <div class="footer">
+        <h3>The Absolute Fitness</h3>
+        <p class="outro">Welcome to The Absolute Fitness, located in Rajajinagar's 5th block. We offer personalized Cardio Sessions, Body Sculpting, Strength Workouts, CrossFit Classes, and Personal Coaching. Transform your fitness journey with our Nutrition Plans tailored just for you</p>
+        <div class="touch">
+        <article><p class="hello">Know on</p>
+        <p class="social"><a href="https://www.instagram.com/theabsolutefitness.bangalore?igsh=MXNmbHQ4bDhmanFlNw==" class="smicon insta"><img src="instagramwhite.png" alt=""></a>
+           <a href="" class="smicon"><img src="facebookwhite.png" alt=""></a>
+        </p>
+        <p class="hello">contact on</p>
+        <p class="social"><a href="" target="_blank" class="smicon"><img src="whatsappwhite.png" alt=""></a>
+            <a href="tel:+919739738389" target="_blank" class="smicon"><img src="callwhite.png" alt=""></a>
+            <a href="mailto:theabsolutefitness0@gmail.com" target="_blank" class="smicon"><img src="emailwhite.png" alt=""></a></p></article>
+       <article><form action="https://formspree.io/f/xayrdwgj" method="post">
+           <label>
+            <p class="hello">Send Your Email</p>
+            <p><input type="email" class="form">  <input type="submit" value="&rarr;" name="homepage" class="sub"/></p> 
+           </label>
+        </form></article>
+        </div>
+
+    </div>        
+
+    <footer class="black-footer">
+        <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="services.html">service</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2024 The Absolute Fitness. All rights reserved.</p>
+    </footer>
+    
+
+</div>  
+    </body>
+
+</html>

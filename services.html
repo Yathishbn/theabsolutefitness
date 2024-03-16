@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+
+    <head>                                                                            <!--head-->
+
+        <meta charset="UTF-8">                                                        <!--meta-->
+        <meta name="viewport" content="width=device-width , initial-scale=1.0 , maximum-scale=1.0 , user-scalable=no">
+        <meta name="keywords" content="">
+        <meta name="description" content=" ">
+        <title>Services of The Absolute Fitness - Rajajinagar, Bangalore </title>                                                             <!--title-->
+
+        <style type="text/css">                    
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Patua+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            overflow-x: hidden;
+        }
+
+        body{
+            font-size: 20px;
+        background-color:antiquewhite;
+            color:#252525;
+            font-family:'montserrat', Arial, Helvetica, sans-serif;
+        }
+
+        .body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin:0;
+    height:100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+.body::-webkit-scrollbar{
+    width:0;
+}
+
+        header{
+            display: flex;
+            background-color: #F9F6EE;
+            background-color: #252525;
+            align-items: center;
+            padding:0px 4%;
+            text-transform: capitalize;
+            justify-content:space-between;
+            z-index: 10;
+        }
+
+        
+        header .nav nav ul{
+            list-style: none;
+        }
+
+        header .nav nav ul li{
+            position: relative;
+            display: inline;
+            float: left;
+        }
+
+        header .nav nav ul li details article{
+            position: absolute;
+        }
+
+        header .nav nav ul li a , header .nav nav ul li details summary{
+            padding: 10px 30px;
+            width: fit-content;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            color:#e9e8e8;
+            display: block;
+        }
+
+        header .nav nav ul li a:hover,header .nav nav ul li details summary.active , header .nav nav ul li details summary:hover{
+            background-color: #3f3f3f;
+            color: #d0fd1b;
+        }
+
+        header .nav nav ul li details article{
+            background-color: #3f3f3f;;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        #check{
+            display:none;
+        }
+
+        header label{
+            display: none;
+        }
+
+
+
+
+        .logo img{
+            height: 100px;
+            margin-top:15px ;
+        }
+
+        
+
+        .head{
+            width:100vw;
+            text-align: center;
+        }
+
+        .head h1{
+        font-family: "Patua One",'Times New Roman', Times, sans-serif;
+        padding: 15px 20px;
+        }
+
+
+        h2.trail{
+        font-family: "Patua One",'Times New Roman', Times, sans-serif;
+        width: fit-content;
+        margin: auto;
+        padding: 20px 30px;
+       }
+
+       h2.trail{
+        padding: 15px 30px;
+       border-width: 3px;
+  border-style: solid;
+  margin-top: 20px;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+       }
+
+        .pas{
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.pasimg{
+    width: clamp(270px, 90%, 600px);
+    margin: auto;
+    padding-top: 40px;
+} 
+
+
+
+.pasimg img{
+    width: clamp(260px, 100%, 500px);
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}
+
+.pasin{
+    width: clamp(270px, 95%, 1100px);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.pasin p.action{
+    margin: auto;
+    width:260px;
+    margin-top: 50px;
+}
+
+.pasin p.action a{
+    width:100%;
+    margin: auto;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #252525;
+    color:#EEDC82;
+    font-weight: bolder;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.pasin article.hov{
+    padding: 20px;
+    margin-top: 1em;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    text-align: justify;
+    transition: all .5s ease-in-out;
+}
+
+.pasin article.hov:hover, .benefitsjr article.hov:active{
+    transform: scale(1.05);
+}
+
+article h2{
+    text-transform: capitalize;
+    line-height: 1.8em;
+    width: fit-content;
+}
+
+.one, .two{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    line-height: 1.4em;
+    justify-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.loc{
+    margin: auto;
+    width:100%;
+}
+
+iframe{
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+}
+
+.two article:nth-child(1){
+    order: 2;
+}
+
+.two article:nth-child(2){
+    order: 1;
+}
+
+p.link{
+    padding:15px 20px;
+    width: fit-content;
+    margin: 25px auto;
+    height: fit-content;
+    background-color: red;
+    border-radius: 20px;
+}
+
+p.link a{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    color:antiquewhite;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+
+
+
+       @media (max-width:640px) {
+    .two article:nth-child(1){
+        order: 1;
+    }
+    
+    .two article:nth-child(2){
+        order: 2;
+    }
+}
+       
+
+
+
+
+        .footer{
+    margin-top: 30px;
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    line-height: 1.6em;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .footer p.outro{
+    width: clamp(260px, 85%, 600px);
+    margin: auto;
+
+  }
+
+  .footer h3{
+    color:#d0fd1b;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  a.smicon img{
+    width: 30px;
+    object-fit: contain;
+    height: 30px;
+    transition: all .2s ease-in-out;
+  }
+
+  a.smicon img:hover, a.smicon img:active{
+    transform:translateY(-.3em);
+  }
+
+  .footer .touch{
+    width:clamp(270px, 85%, 1000px);
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+    gap: 2em;
+  }
+
+  .touch{
+    padding-top: 20px;
+  }
+
+p.social{
+    word-spacing: 15px;
+}
+
+p.hello{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer input.form{
+    background-color: transparent;
+    border: rgb(223, 223, 223) medium solid;
+    line-height: 2em;
+    border-radius: 15px;
+    outline: none;
+    padding: 2px 3px;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    transition: all .2s ease-in-out;
+    width: 250px;
+}
+
+ .footer input.form:focus{
+    color: rgb(223, 223, 223);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 18px;
+    border: rgb(0, 45, 243) medium solid;
+    transform: translateY(-.4em);
+}
+
+.footer .sub{
+    font-size: 30px;
+    padding:10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+
+  }
+
+  .black-footer {
+    background-color: #252525;
+    color: white;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: 20px;
+  }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-content nav li {
+    margin-right: 20px;
+}
+
+.footer-content nav a {
+    color: white;
+}
+
+footer{
+    margin-bottom: -40px;
+}
+
+
+      
+
+
+        
+
+
+        @media (max-width:500px){
+            body{
+                font-size: 18px;
+            }
+        }
+
+
+
+        @media (max-width:900px){
+
+header .nav{
+    top: 0;
+    left: -150%;
+    display: grid;
+    background-color: #292929;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+}
+
+
+
+header .nav nav ul {
+    position: relative;
+    padding-top: 100px;
+}
+
+header .nav nav ul li{
+    width: 100%;
+}
+
+header .nav nav ul li a,header .nav nav ul li details summary{
+    margin:auto;
+    width: fit-content;
+}
+
+header .nav nav ul li details article{
+    position: relative;
+    border-radius: 0;
+    width: 100%;
+}
+
+header .nav nav ul li a:active, header .nav nav ul li details summary:hover{
+background-color: transparent;
+color: #e7e7e7;
+}
+
+
+
+header .nav {
+    width: 70%;
+}
+
+
+header label{
+    display: initial;
+}
+
+#check:checked ~ .nav {
+    left: 0; 
+}
+
+
+
+header label{
+position: relative;
+display: flex;
+margin-right: 25px;
+justify-content: center;
+cursor: pointer;
+}
+
+.middle{
+height: 7px;
+width: 40px;
+background-color: #f2f2f2;
+border-radius: 50px;
+position: absolute;
+transition: 0.3s ease;
+}
+
+.bottom{
+top: 13px;
+height: 7px;
+width: 40px;
+background-color: #f2f2f2;
+border-radius: 50px;
+position: absolute;
+transition: 0.3s ease;
+}
+
+.top{
+bottom: 7px;
+height: 7px;
+width: 40px;
+background-color: #f2f2f2;
+border-radius: 50px;
+position: absolute;
+transition: 0.3s ease;
+}
+
+#check:checked ~ label .top{
+transform:rotate(-45deg);
+transform-origin: right;
+
+}
+
+#check:checked ~  label .bottom{
+transform:rotate(45deg);
+transform-origin: right;
+
+}
+
+#check:checked ~  label .middle{
+transform:translatex(20px);
+opacity: 0;
+
+}
+
+
+}
+        </style>                                                                        <!--style-->
+        
+    </head>
+
+    <body>                                                                             <!--body-->
+
+        <div class="body">
+
+        <header>
+
+            <div class="logo">
+               <a href="index.html"><img src="theabsolutefitnesslogo.png" alt="the absolute fitness, rajajinagar logo"></a>
+            </div>
+
+            
+
+             <input type="checkbox" id="check">
+
+             <label for="check">
+                    <span class="top" id="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+            </label>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html" >about</a></li>
+                    <li><details><summary class="active">service</summary>
+                        <article> <p><a href="#cardio">cardio</a></p>
+                         <p><a href="#strength">strength training</a></p>
+                         <p><a href="#nutrition">nutrition</a></p>
+                         <p><a href="#personal">personal training</a></p>
+                         <p><a href="#body">body building</a></p>
+                         <p><a href="#cross">cross fit</a></p></article></details>
+                     </li>
+                    <li><a href="contact.html">contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+       </header>
+
+
+       <div class="head">
+        <h1>Our Services</h1>
+        <p></p>
+       </div>
+
+       <div class="pas">
+        <div class="pasin">
+            <h2 class="trail" id="cardio">Cardio:</h2>
+            <div class="one">
+           <article> <div class="pasimg"><img src="cardio.png" alt=""/> </div></article>
+        
+            <article class="hov">
+            <p>Experience the heart-pumping intensity of our cardio workouts at The Absolute Fitness. Whether you prefer running, cycling, or using the elliptical, our top-of-the-line equipment and expert instructors will help you maximize your endurance, burn calories, and improve your cardiovascular health. Join us for the ultimate cardio experience in Rajajinagar!</p>
+        <p class="link"><a href="contact.html">Join US</a></p></article>
+        </div>
+        <h2 class="trail" id="strength">Strength Training</h2>
+        <div class="two">
+       <article><div class="pasimg"><img src="strength training.png" alt=""/> </div></article>
+        
+            <article class="hov">
+            <p>Unlock your full potential and build functional strength with our strength training sessions at The Absolute Fitness - Rajajinagar. Our trainers will design custom workouts tailored to your fitness level and goals, focusing on compound exercises and progressive overload to help you increase muscle mass, improve bone density, and boost metabolism</p>
+            <p class="link"><a href="contact.html">Join US</a></p>
+        </article>
+        </div>
+        <h2 class="trail" id="nutrition">Nutrition Solutions</h2>
+           <div class="one">
+           <article> <div class="pasimg"><img src="nutrition plan.png" alt=""/> </div></article>
+        
+            <article class="hov">
+            <p>Achieving your fitness goals requires more than just exercise—it also requires proper nutrition. Our nutrition solutions at The Absolute Fitness - Rajajinagar are designed to complement your workout routine, helping you optimize your diet for maximum results. Our certified nutritionists will work with you to create personalized meal plans and provide valuable guidance to fuel your body for success. Trust us to provide the best nutrition solutions in Rajajinagar.</p>
+        <p class="link"><a href="contact.html">Join US</a></p></article>
+        </div>
+        <h2 class="trail" id="personal">Personal Training</h2>
+        <div class="two">
+       <article><div class="pasimg"><img src="personal training.png" alt=""/> </div></article>
+        
+            <article class="hov">
+            <p>Get personalized attention and guidance from our certified personal trainers at The Absolute Fitness - Rajajinagar. Whether you're looking to lose weight, build muscle, improve athletic performance, or simply adopt a healthier lifestyle, our trainers will create a customized workout plan tailored to your individual needs, preferences, and goals. With one-on-one support and accountability, you'll stay motivated and see results faster than ever before</p>
+            <p class="link"><a href="contact.html">Join US</a></p>
+        </article>
+        </div>
+        <h2 class="trail" id="body">Body Building</h2>
+           <div class="one">
+           <article> <div class="pasimg"><img src="body building.png" alt=""/> </div></article>
+        
+            <article class="hov">
+            <p>Sculpt your physique and build lean muscle mass with our bodybuilding programs at The Absolute Fitness - Rajajinagar. Whether you're a seasoned bodybuilder or just starting out, our experienced trainers will guide you through effective strength-training exercises and techniques to help you achieve your desired results. Experience the best bodybuilding training in Rajajinagar with us</p>
+        <p class="link"><a href="contact.html">Join US</a></p></article>
+        </div>
+        <h2 class="trail" id="cross">CrossFit</h2>
+        <div class="two">
+       <article><div class="pasimg"><img src="cross fit.png" alt=""/> </div></article>
+        
+            <article class="hov">
+            <p>Experience the intensity and camaraderie of CrossFit training at The Absolute Fitness - Rajajinagar. Our CrossFit classes combine elements of weightlifting, gymnastics, and high-intensity interval training to deliver a full-body workout that will push your limits and challenge you to reach new heights of fitness.</p>
+            <p class="link"><a href="contact.html">Join US</a></p>
+        </article>
+        </div>
+    </div>
+    </div>
+       
+            
+
+       <div class="footer">
+        <h3>The Absolute Fitnes</h3>
+        <p class="outro">Welcome to The Absolute Fitness, located in Rajajinagar's 5th block. We offer personalized Cardio Sessions, Body Sculpting, Strength Workouts, CrossFit Classes, and Personal Coaching. Transform your fitness journey with our Nutrition Plans tailored just for you</p>
+        <div class="touch">
+        <article><p class="hello">Know on</p>
+        <p class="social"><a href="https://www.instagram.com/theabsolutefitness.bangalore?igsh=MXNmbHQ4bDhmanFlNw==" class="smicon insta"><img src="instagramwhite.png" alt=""></a>
+           <a href="" class="smicon"><img src="facebookwhite.png" alt=""></a>
+        </p>
+        <p class="hello">contact on</p>
+        <p class="social"><a href="" target="_blank" class="smicon"><img src="whatsappwhite.png" alt=""></a>
+            <a href="" target="_blank" class="smicon"><img src="callwhite.png" alt=""></a>
+            <a href="tel:+919739738389" target="_blank" class="smicon"><img src="callwhite.png" alt=""></a>
+            <a href="mailto:theabsolutefitness0@gmail.com" target="_blank" class="smicon"><img src="emailwhite.png" alt=""></a></p></article>
+       <article><form action="https://formspree.io/f/xayrdwgj" method="post">
+           <label>
+            <p class="hello">Send Your Email</p>
+            <p><input type="email" class="form">  <input type="submit" value="&rarr;" name="homepage" class="sub"/></p> 
+           </label>
+        </form></article>
+        </div>
+
+    </div>        
+
+    <footer class="black-footer">
+        <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="services.html">service</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2024 The Absolute Fitness. All rights reserved.</p>
+    </footer>
+    
+
+</div>  
+    </body>
+
+</html>
